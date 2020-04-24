@@ -1,3 +1,4 @@
 node_modules
 file-browser-0.1.0.tgz
 *.tgz
+.idea/

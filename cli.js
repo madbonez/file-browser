@@ -4,6 +4,8 @@ const http = require('http');
 const express = require('express');
 const path = require('path');
 const fb = require('./index.js');
+const bodyParser = require('body-parser');
+var jsonParser = bodyParser.json({limit: '10mb', extended: true})
 
 fb.configure({
     removeLockString: true,
@@ -44,6 +46,7 @@ var argv = require('yargs')
 const app = express();
 
 var dir =  process.cwd();
+
 app.get('/b', function(req, res) {
     let file;
     if (req.query.r === '/tmp') {
@@ -78,3 +81,5 @@ app.get('/files', fb.get);
 app.get('/', function(req, res) {
     res.redirect('lib/template.html');
 });
+
+app.post('/b', jsonParser, fb.post);

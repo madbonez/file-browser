@@ -101,6 +101,13 @@ exports.get = function(req, res) {
     readRoots(roots, res, query, []);
 };
 
+exports.post = function(req, res) {
+    let currentDir =  dir;
+    fs.writeFile(path.join(dir, req.query.f), JSON.stringify(req.body, null, '  '), () => {
+        res.json({done: true})
+    })
+}
+
 exports.configure = function(c) {
     if (!c) return;
     config = c;

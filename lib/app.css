@@ -1,4 +1,4 @@
-body { left:10%;width:80%;position:absolute; top:10%; color: black!important;}
+body { color: black!important;}
 
 .mainpanel { height:90%;min-height:400px;}
 
@@ -17,3 +17,27 @@ body { left:10%;width:80%;position:absolute; top:10%; color: black!important;}
 .dataTables_info { margin-top: 10px; background: ghostwhite; }
 
 .up { margin-left: 20px; border:solid 1px black; cursor:pointer; width:100px; padding-left: 10px; padding-right:10px; }
+
+#modal-window {
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+    width: 96%;
+    height: 96%;
+    box-shadow: grey 4px 4px 4px;
+    left: 2%;
+    top: 2%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+#jsoneditor {
+    height: calc(100% - 40px);
+}
+
+#editor-buttons {
+    height: 40px;
+    display: flex;
+    margin: auto;
+}

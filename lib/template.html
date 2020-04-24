@@ -12,6 +12,7 @@
     <title>File Browser</title>
     <link rel="stylesheet" href="/lib/bootstrap.min.css">
     <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/jsoneditor.css">
     <link rel="stylesheet" href="/lib/app.css">
   </head>
   <body>
@@ -27,9 +28,18 @@
               </table>
       </div>
 
-  </div> 
+  </div>
+
+   <div id="modal-window">
+       <div id="jsoneditor"></div>
+       <div id="editor-buttons">
+           <button id="editor-save">Сохранить</button>
+           <button id="editor-close">Закрыть</button>
+       </div>
+   </div>
     <script src="/lib/bootstrap.min.js"></script>
     <script src="/lib/datatable/js/jquery.datatables.min.js"></script>
+   <script src="/lib/jsoneditor-minimalist.js"></script>
     <script src="/lib/app.js"></script>
   </body>
 </html>
