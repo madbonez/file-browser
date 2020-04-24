@@ -1,3 +1,6 @@
+# JSON File Browser
+Browse and modify json files on local file system. Based on fork from file-browser and jsoneditor library.
+
 file-browser
 ============
 `file-browser` allows embedding of a web-enabled file browser in your node site.
