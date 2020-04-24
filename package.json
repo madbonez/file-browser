@@ -1,7 +1,7 @@
 {
   "name": "json-file-browser",
   "author": "madbonez",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "file-browser with json-editor lib",
   "keywords": [
     "filebrowser",
