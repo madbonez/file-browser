@@ -10,7 +10,7 @@
     "fileshare"
   ],
   "bin": {
-    "file-browser": "./index.js"
+    "json-file-browser": "./index.js"
   },
   "homepage": "https://github.com/madbonez/file-browser",
   "repository": {
