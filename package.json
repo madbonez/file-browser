@@ -1,7 +1,7 @@
 {
   "name": "json-file-browser",
   "author": "madbonez",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "file-browser with json-editor lib",
   "keywords": [
     "filebrowser",
@@ -22,10 +22,10 @@
     "body-parser": "^1.19.0",
     "jsoneditor": "^8.6.6",
     "lodash": "~4.17",
-    "yargs": "8.0.2"
+    "yargs": "8.0.2",
+    "express": "^4.16.2"
   },
   "devDependencies": {
-    "express": "^4.16.2"
   },
   "main": "file-browser",
   "bugs": {
